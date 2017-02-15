@@ -1,0 +1,59 @@
+@charset "utf-8"/* CSS Document */
+
+body {
+	padding:0;
+	margin:0;
+}
+
+#storbox {
+	height:100%;
+	width:80%;
+	position:absolute;
+	background-color:#FFF;
+	margin-left:10%;
+}
+
+header {
+	background-color:#FFF;
+}
+
+h1{
+	font-size:50px;
+	text-align:center;
+}
+
+
+a{
+	color:#000;
+}
+
+a:hover {
+	background-color:#999;
+}
+
+nav{
+	width:100%;
+	height:5%;
+    background-color:#FFF;
+	color:#FFF;
+	font-size:36px;
+}
+
+ul{
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+article {
+	text-align:right;
+	margin-top:20px;
+	margin-right:40%;
+	background-color:#FFF;
+}
+li {
+	height:100%;
+	width:33%;
+	float:left;
+}
+
