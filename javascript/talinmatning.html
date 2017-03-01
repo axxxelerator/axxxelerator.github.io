@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Talinmatning</title>
+</head>
+
+<body>
+	<p id="demo"></p>
+    
+	<button onClick="myFunction()">Skriv in ditt tal här</button>
+    <script language="javascript">
+	function myFunction()
+		{
+			var person = prompt("Skriv in ditt tal", "Talet");
+			
+			if (person > 0 && person != null) {
+        	document.getElementById("demo").innerHTML =
+        	"Ditt tal var" + "\t" + person;
+  	    }
+			else if ( person < 0 ) {
+			document.getElementById("demo").innerHTML =
+        	"Ditt tal var" + "\t" + person;
+		}
+			else if (isNaN(person)) {
+    		parseInt(alert("Det var inget tal, skriv in ett tal", ""));
+			myFunction();
+		}
+		}
+		</script>
+</body>
+</html>
