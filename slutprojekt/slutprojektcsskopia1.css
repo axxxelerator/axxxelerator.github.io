@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding:0;
+	margin:0;
+}
+
+#bakgrund{
+	width:100%;
+	height:100%;
+	background-color:#99CCFF;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	position:absolute;
+}
+
+#storbox{
+	height:100%;
+	width:80%;
+	margin-left:10%;
+	background-color:#FFF;
+}
+
+header{
+	background-color:#FFDEAD;
+	width:100%;
+	height:11%;
+	box-shadow:0px 10px 10px 0 rgba(0,0,0,0.3);
+}
+
+.container {
+  padding: 20px;
+  float:left;
+}
+
+.search-box {
+  display: inline-block;
+  width: 5%;
+  border-radius: 3px;
+  padding: 10px 55px 10px 15px;
+  position:absolute;
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-align:left;
+}
+
+.search-box.hovered, .search-box:hover, .search-box:active {
+  border: 10px solid #FFF;
+}
+.search-box input[type=text] {
+  border: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+}
+.search-box input[type=text]:hover, .search-box input[type=text]:focus, .search-box input[type=text]:active {
+  box-shadow: none;
+}
+.search-box .search-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #aaa;
+  border-radius: 0px;
+  font-size: 21px;
+  padding: 0px 0px 0px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+/*  background-image:url(../f%C3%B6rstoringsglas.png);
+  background-size:100% 100%;
+  background-repeat:no-repeat;*/
+}
+.search-box .search-btn:hover {
+  color: #FFF;
+  background-color: #FFF;
+}
+.floatleft{
+	float:left;
+}
+
+article{
+	width:20%;
+	height:65%;
+	background-color:#FFF;
+	overflow:auto;	
+	float:right;
+	margin-top:20%;
+	margin-right:6%;
+	border:2px solid rgba(0,0,0);
+}

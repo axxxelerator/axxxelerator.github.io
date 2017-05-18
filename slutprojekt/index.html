@@ -8,71 +8,70 @@
 
 <body>
 	<div id="bakgrund">
-	<div id="storbox">
-	<div id="rektangel"><p>Populärast sökningar</p>
+        <div id="storbox">
+
+            <header>
+            	<a href="index.html"><img src="coollogga.png" class="floatleft" alt="Logga" height="100" width="100"></a>
     
-    <a href="#"><figcaption> Stockholm </figcaption></a>
-    <a href="#"><img src="stockholm.jpg" alt="stockholm" height="200" width="250"></a>
-
-	<a href="#"><figcaption> Göteborg </figcaption></a>
-    <a href="#"><img src="göteborg2.jpg" alt="Göteborg" height="200" width="200"></a>
+        	
+            <div class="knapp">
+                    <a href="omoss.html" class="button">Om oss</a>
+            </div>
+               </header>          
+               <br>
+               <h1> Välkommen till turistens guide till Sverige! </h1>
     
-	<a href="#"><figcaption> Åre </figcaption></a>
-    <a href="#"><img src="åre.jpg" alt="Åre" height="200" width="200"></a>
-
-    </div>
-     <div id="knapp">
-     <a href="#" class="button">Om oss</a>
-     </div>
-     <div id="knapp2">
-     <a href="#" class="button">OOO</a>
-     </div>
-        <header><a href="index.html"><img src="coollogga.png" class="floatleft" alt="Logga" height="100" width="100"></a>
-	</header>
-    	<br>
-         <h1> Välkommen till turistens guide till Sverige! </h1>
-         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Sök stad..." title="Type in a name">
-         <ul id="myUL">
-  <li><a href="#" class="header">A</a></li>
-  <li><a href="#">Adele</a></li>
-  <li><a href="#">Agnes</a></li>
-
-  <li><a href="#" class="header">B</a></li>
-  <li><a href="#">Billy</a></li>
-  <li><a href="#">Bob</a></li>
-
-  <li><a href="#" class="header">C</a></li>
-  <li><a href="#">Calvin</a></li>
-  <li><a href="#">Christina</a></li>
-  <li><a href="#">Cindy</a></li>
-  
-  <li><a href="#" class="header">D</a></li>
-  
-  <li><a href="#" class="header">E</a></li>
-  
-  <li><a href="#" class="header">F</a></li>
-</ul>
-
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-
+            <div id="rektangel">
+                <p>Populäraste sökningar</p>
+                
+                <a href="stockholmsida.html"><h2> Stockholm </h2> </a>
+                <a href="stockholmsida.html"><img src="stockholm.jpg" alt="stockholm" height="200" width="250"></a>
+            
+                <a href="göteborgssida.html"><h2> Göteborg </h2> </a>
+                <a href="göteborgssida.html"><img src="göteborg2.jpg" alt="Göteborg" height="200" width="200"></a>
+                
+                <a href="åresida.html"><h2> Åre </h2> </a>
+                <a href="åresida.html"><img src="åre.jpg" alt="Åre" height="200" width="200"></a>
+                
+                <a href="malmosida.html"><h2> Malmö </h2> </a>
+                <a href="malmosida.html"><img src="malmo.jpg" alt="Malmö" height="200" width="200"></a>
+            </div>
+            <div id="sökruta">
+            	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Sök stad..." title="Skriv in en stad">
+            	<ul id="myUL">
+                <li><a href="#"><div id="tecken">A</div></a></li>
+                <li><a href="#"><div id="tecken">A</div></a></li>
+                <li><a href="#"><div id="tecken">A</div></a></li>
+            	<li><a href="göteborgssida.html">Göteborg</a></li>
+            	<li><a href="stockholmsida.html">Stockholm</a></li>
+            	<li><a href="åresida.html">Åre</a></li>
+                <li><a href="malmosida.html">Malmö</a></li>
+            </ul>
+            </div>
+          
+    
+    
+    <footer> Axel Carlsson </footer>
+    
+    <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+    
+            }
         }
     }
-}
-</script>
-    </div>
-    </div>
+    </script>
+        </div>
     </div>
 </body>
 </html>
