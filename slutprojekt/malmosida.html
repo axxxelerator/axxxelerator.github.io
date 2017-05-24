@@ -18,14 +18,65 @@
             <div id="titeltext">
                 <p>Malmö</p>
             </div>
-            <div id="rektangel3">
-                <div id="ruta"></div>
-                <div id="ruta2"></div>
-                <div id="ruta3"></div>
-                <div id="ruta4"></div>
-                <div id="ruta5"></div>
+            
+            <h3>Historia och sevärdheter</h3>
+            <div id="button"><button onclick="myFunction2()">Läs om historian</button></div>
+            	<div id="faktaruta">
+            		<div id="faktatext">
+                    	<p>
+                        Malmö var under 1100-talet en kyrkby som låg på platsen för nuvarande Triangeln. Vid mitten av 1200-talet anlades en stad vid kusten som övertog byns namn. Staden kan ha 				 						anlagts av den danske ärkebiskopen som en kommunikationsort mellan kyrkans stad Köpenhamn och Lund. Det rika fisket i Öresund bidrog till stadens mycket kraftiga expansion  			 						runt åren kring 1300. Malmö övertog mer och mer från Lund rollen som den viktigaste staden i Skåne. Under 1500-talet inföll stadens andra stora ekonomiska glansperiod.
+						</p>
+                        
+ 	 					Tunnelkomplexet vid Adelgatan och Sankt Petrikyrkan från 1300-talet är de äldsta bevarade byggnaderna i Malmö. Därefter kommer en del 14– och 1500-talshus i centrum. Malmöhus  	 	 		 		slott byggdes under denna period.
+
+	  					Under den så kallade Grevefejden 1534–1536 spelade Malmö en avgörande roll i försöken att få återinsatt den avhållne kungen Kristian II. Malmö förlorade kampen. Den nye kungen 						Kristian III lät gräva en vallgrav runt slottet Malmöhus och uppkastade också slottets vallar samt uppförde fyra kraftiga kanontorn för slottets beskydd. Här inlades en stark 																 						garnison.
+
+	 					I samband med Roskildefreden 1658 hamnade staden utvecklingsmässigt i bakvattnet. Först i slutet av 1700-talet, när Frans Suell tog initiativet till att bygga en riktig hamn i 						Malmö, började staden att återhämta sig för att sedan börja växa på allvar i mitten av 1800-talet.
+
+						Södra stambanan fick sin sydliga ändstation i Malmö, på grund av närheten till kontinentfärjorna och Köpenhamn. Det skedde ungefär samtidigt som utresevillkoren till Danmark 		 						lättades. En rad tullagar som införts i Skåne för att hindra handel och kontakt med Danmark upphörde vid denna tid. På 1860-talet passerade Malmö Norrköping som Sveriges  	 	 						tredje största stad.[5] En lång tid därefter fanns en stark rivalitet mellan arbetarstäderna Malmö och Norrköping, vilket inte minst syntes när fotbollslagen möttes i  		 	 					Fotbollsallsvenskan på 1950-talet.
+ 						Kungsparken kring sekelskiftet 1900
+
+                    </div> 
+            	</div>
+            <div id="button"><button onclick="myFunction3()">Läs om sevärdheter</button></div>
+            	<div id="faktaruta2">
+                	<div id="faktatext"> Alla länkar leder till Wikipedia
+                    	
+                    </div>
+                </div>
+            
+			<div id="rektangel3">
+            	<img src="malmo2.jpg" alt="Malmö" height="300" width="500">
+                <div id="ruta"><div class="padding"> Namn: Malmö</div></div>
+                <div id="ruta2"><div class="padding">Smeknamn: Gangsterstaden</div></div>
+                <div id="ruta3"><div class="padding">Län: Skåne län</div></div>
+                <div id="ruta4"><div class="padding">Invånarantal: 301 706</div></div>
+                <div id="ruta5"><div class="padding">Befolkningstäthet: 39.15/ha (4 000/km^2)</div></div>
             </div>
             <footer> Axel Carlsson </footer>
+            
+             <script>
+				function myFunction2()
+			{
+    			var x = document.getElementById('faktaruta');
+   			 	if (x.style.display === 'none') {
+        			x.style.display = 'block';
+    			} else {
+        			x.style.display = 'none';
+    			}
+			}
+			
+				function myFunction3()
+			{
+    			var x = document.getElementById('faktaruta2');
+   			 	if (x.style.display === 'none') {
+        			x.style.display = 'block';
+    			} else {
+        			x.style.display = 'none';
+    			}
+			}
+			</script>
+            
         </div>
     </div>
 </body>

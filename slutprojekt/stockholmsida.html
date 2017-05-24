@@ -10,24 +10,79 @@
 	<div id="bakgrund">
         <div id="storbox">
         
-            <header><a href="index.html"><img src="coollogga.png" class="floatleft" alt="Logga" height="100" width="100"></a>
-           		<div class="knapp">
-                    <a href="omoss.html" class="button">Om oss</a>
+            <header>
+            	<a href="index.html"><img src="coollogga.png" class="floatleft" alt="Logga" height="100" width="100">
+                </a>
+            	<div class="knapp">
+                	<a href="omoss.html" class="button">Om oss</a>
             	</div>
             </header>
-            	<div id="titeltext">
-                	<p>Stockholm</p>
-            	</div>
-            <div id="rektangel3">
-                <div id="ruta">Namn: Stockholm</div>
-                <div id="ruta2">Smeknamn: Fjollträsk, Eken</div>
-                <div id="ruta3"></div>
-                <div id="ruta4"></div>
-                <div id="ruta5"></div>
+          	<div id="titeltext">
+                <p>Stockholm</p>
             </div>
-            <footer> 
-            	Axel Carlsson 
-            </footer>
+            
+            <h3>Historia och sevärdheter</h3>
+            <div id="button"><button onclick="myFunction2()">Läs om historian</button></div>
+            	<div id="faktaruta">
+            		<div id="faktatext"> 
+                    <p>Stockholm är Sveriges huvudstad samt landets kulturella, politiska, mediala och ekonomiska centrum. Det är Sveriges såväl som Nordens folkrikaste tätort.
+					Stockholm började etableras 1187, enligt Visbyfranciskanernas bok till följd av att Svearikets dåvarande huvudort, Sigtuna, härjades av balter samma år. Traditionellt brukar dock 																		  					Birger jarl (cirka 1210–1266) räknas som stadens grundare 1252, i enlighet med skyddsbrevet för Fogdö kloster och Erikskrönikan. Närliggande norrut fanns en liten by, Väsby, vid  	 					motsvarande dagens Hötorget. Ortens ur försvars- och handelssynpunkt strategiska placering i Mälarens utlopp i Östersjön, avgränsande Uppland och Södermanland, avgjorde Stockholms 					tillkomst och ökande betydelse. Bebyggelse tilltog under 1200-talet på Stadsholmen, Helgeandsholmen och Kidaskär, sedermera Gråbrödraholmen, i dag känd som Riddarholmen. Handel 	  					med och inflyttning av tyska handelsmän bidrog till utvecklingen och förbindelser med kyrkan och Hansaförbundet. Den växande köpstaden fick snart en egen kyrka, Sankt Nicolai     			  					kyrka, i dag känd som Storkyrkan, samt egen församling utbruten ur Solna församling cirka 1260. Slott, franciskan-, klarissakloster och dominkankonvent uppfördes, gynnade av bland  					annat Birger jarl och kung Magnus Ladulås (cirka 1240–1290), samt även stegvis stadsmurar.</p>
+
+					Alltsedan staden fick stadsprivilegier 1436 är Stockholm rikets största och viktigaste. Statusen som Sveriges förvaltningscentrum och officiell huvudstad befästes formellt genom 				 					1634 års regeringsform, då kungahus, regering, riksdag och centralförvaltning samlades till staden.
+ 					I den östligaste delen av Stockholm börjar det vidsträckta område med över 30 000 öar som kallas Stockholms skärgård, en av världens mest örika, sammanhängande skärgårdar.
+  					År 1998 utnämndes Stockholms kommun till Europas kulturhuvudstad. År 2010 var staden Europas miljöhuvudstad. </div>
+            	</div>
+            <div id="button"><button onclick="myFunction3()">Läs om sevärdheter</button></div>
+            	<div id="faktaruta2">
+                	<div id="faktatext"> <p>Alla länkar leder till Wikipedia</p> 
+                    	<a href="https://sv.wikipedia.org/wiki/Vasamuseet" target="_blank"><p>Vasa museet</p></a>
+                        <a href="https://sv.wikipedia.org/wiki/Gamla_stan" target="_blank"><p> Gamla Stan</p></a>
+                        <a href="https://sv.wikipedia.org/wiki/Djurg%C3%A5rden" target="_blank"><p> Djurgården</p>
+                        <a href="https://sv.wikipedia.org/wiki/Stockholms_stadshus" target="_blank"><p> Stadshuset</p>
+                        <a href="https://sv.wikipedia.org/wiki/Fotografiska" target="_blank"><p>Fotografiska museet</p>
+                    	<a href="https://sv.wikipedia.org/wiki/Monteliusv%C3%A4gen" target="_blank"><p>Monteliusvägen</p> 
+                        <a href="https://sv.wikipedia.org/wiki/Skansen" target="_blank"><p>Skansen</p> 
+                        <a href="https://sv.wikipedia.org/wiki/Abbamuseet" target="_blank"><p>ABBA the museum</p> 
+                    </div>
+                </div> 
+              
+            <div id="rektangel3">
+            	<img src="stockholm2.jpg" alt="Stockholm" height="300" width="500">
+                <div id="ruta"><div class="padding"> Namn: Stockholm</div></div>
+                <div id="ruta2"><div class="padding">Smeknamn: Eken, Fjollträsk</div></div>
+                <div id="ruta3"><div class="padding">Län: Stockholms län</div></div>
+                <div id="ruta4"><div class="padding">Invånarantal: 1 510 000</div></div>
+                <div id="ruta5"><div class="padding">Befolkningstäthet: 5 000/km^2</div></div>
+            </div>
+            <footer> Axel Carlsson </footer>
+            
+            <script>
+				function myFunction2()
+			{
+				var y = 0;
+    			var x = document.getElementById('faktaruta');
+   			 	if (x.style.display === 'none') {
+        			x.style.display = 'block';
+					y = 1;
+    			} else {
+        			x.style.display = 'none';
+    			}
+			}
+			
+				function myFunction3()
+			{
+    			var x = document.getElementById('faktaruta2');
+   			 	if( y ===1){
+					button.disabled = 'disabled';
+				}
+				else if (x.style.display === 'none') {
+        			x.style.display = 'block';
+    			} else {
+        			x.style.display = 'none';
+    			}
+			}
+			</script>
+            
         </div>
     </div>
 </body>

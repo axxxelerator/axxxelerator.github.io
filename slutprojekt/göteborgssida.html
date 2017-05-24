@@ -18,14 +18,52 @@
             <div id="titeltext">
                 <p>Göteborg</p>
             </div>
+            
+            <h3>Historia och sevärdheter</h3>
+            <div id="button"><button onclick="myFunction2()">Läs om historian</button></div>
+            	<div id="faktaruta">
+            		<div id="faktatext">  </div>
+            	</div>
+            <div id="button"><button onclick="myFunction3()">Läs om sevärdheter</button></div>
+            	<div id="faktaruta2">
+                	<div id="faktatext"> Alla länkar leder till Wikipedia
+                    	
+                    </div>
+                </div> 
+              
+            
             <div id="rektangel3">
-                <div id="ruta"></div>
-                <div id="ruta2"></div>
-                <div id="ruta3"></div>
-                <div id="ruta4"></div>
-                <div id="ruta5"></div>
+            	<img src="stockholm2.jpg" alt="Stockholm" height="300" width="500">
+                <div id="ruta"><div class="padding"> Namn: Göteborg</div></div>
+                <div id="ruta2"><div class="padding">Smeknamn: Lilla London</div></div>
+                <div id="ruta3"><div class="padding">Län: Västa Götalands län</div></div>
+                <div id="ruta4"><div class="padding">Invånarantal: 1 000 000</div></div>
+                <div id="ruta5"><div class="padding">Befolkningstäthet: 2 663/km^2</div></div>
             </div>
             <footer> Axel Carlsson </footer>
+            
+            <script>
+				function myFunction2()
+			{
+    			var x = document.getElementById('faktaruta');
+   			 	if (x.style.display === 'none') {
+        			x.style.display = 'block';
+    			} else {
+        			x.style.display = 'none';
+    			}
+			}
+			
+				function myFunction3()
+			{
+    			var x = document.getElementById('faktaruta2');
+   			 	if (x.style.display === 'none') {
+        			x.style.display = 'block';
+    			} else {
+        			x.style.display = 'none';
+    			}
+			}
+			</script>
+            
         </div>
     </div>
 </body>
