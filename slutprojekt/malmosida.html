@@ -11,9 +11,6 @@
         <div id="storbox">
         
             <header><a href="index.html"><img src="coollogga.png" class="floatleft" alt="Logga" height="100" width="100"></a>
-            <div class="knapp">
-                    <a href="omoss.html" class="button">Om oss</a>
-            </div>
             </header>
             <div id="titeltext">
                 <p>Malmö</p>
@@ -38,10 +35,14 @@
 
                     </div> 
             	</div>
-            <div id="button"><button onclick="myFunction3()">Läs om sevärdheter</button></div>
-            	<div id="faktaruta2">
-                	<div id="faktatext"> Alla länkar leder till Wikipedia
-                    	
+            <div class="button"><button onclick="myFunction3()">Läs om sevärdheter</button></div>
+            	<div class="faktaruta2">
+                	<div class="faktatext"> <p>Alla länkar leder till Wikipedia</p>
+                        <a href="https://sv.wikipedia.org/wiki/Turning_Torso" target="_blank"><p>Turning Torso</p></a>
+                        <a href="https://sv.wikipedia.org/wiki/Malm%C3%B6_konsthall" target="_blank"><p>Malmö konsthall</p></a>
+                    	<a href="https://sv.wikipedia.org/wiki/Folkets_Park,_Malm%C3%B6" target="_blank"><p>Folkets park</p></a>
+                        <a href="https://sv.wikipedia.org/wiki/Moderna_museet_Malm%C3%B6" target="_blank"><p>Moderna useet</p></a>
+                        <a href="https://sv.wikipedia.org/wiki/Sankt_Petri_kyrka,_Malm%C3%B6" target="_blank"><p>Sankt Petri kyrka</p></a>
                     </div>
                 </div>
             
@@ -56,25 +57,30 @@
             <footer> Axel Carlsson </footer>
             
              <script>
-				function myFunction2()
-			{
-    			var x = document.getElementById('faktaruta');
-   			 	if (x.style.display === 'none') {
-        			x.style.display = 'block';
-    			} else {
-        			x.style.display = 'none';
-    			}
-			}
-			
-				function myFunction3()
-			{
-    			var x = document.getElementById('faktaruta2');
-   			 	if (x.style.display === 'none') {
-        			x.style.display = 'block';
-    			} else {
-        			x.style.display = 'none';
-    			}
-			}
+                var y = 0;
+                function myFunction2() {
+                    var x = document.getElementById('faktaruta');
+                    if (x.style.display === 'none') {
+                        x.style.display = 'block';
+                        y = 1;
+
+                    } else {
+                        x.style.display = 'none';
+                        y = 0;
+                    }
+                }
+
+                function myFunction3() {
+                    var x = document.getElementById('faktaruta2');
+                    if (y == 1) {
+                        button.disabled = 'disabled';
+                    }
+                    else if (x.style.display === 'none') {
+                        x.style.display = 'block';
+                    } else {
+                        x.style.display = 'none';
+                    }
+                }
 			</script>
             
         </div>
