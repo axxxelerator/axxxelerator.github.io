@@ -47,22 +47,7 @@ form {
 	margin:2.5%;
 }
 
-.knapp {
-	background-color:#CCE5FF;
-	border:none;
-    color:#FFF;
-   
-    text-align: center;
-	padding:24px 30px;
-    font-size: 16px;
-	/*argin:16px 2px;*/
-	float:left;
-	cursor:pointer;
-	border-radius: 15px;
-	margin-right:30px;
-	margin-left:4%;
-	margin-top:1.5%;
-}
+
 
 h1 {
 	text-align: center;
@@ -136,7 +121,7 @@ footer{
 
 #sökruta{
 	width: 35%;
-	height:11.8%;
+	height:20%;
 	background-color: #FFF;
 	overflow:hidden;
 	float:right;
@@ -288,6 +273,7 @@ rad {
 	border: 2px solid rgb(255,255,255);
 	border-radius: 10px;
 	text-align: left;
+    overflow: auto;
 	font-family: Arial, Helvetica, sans-serif;
 	display:none;
 }
@@ -303,10 +289,16 @@ rad {
 	text-align: left;
 	font-family: Arial, Helvetica, sans-serif;
 	display:none;
+    overflow: auto;
 }
 
 #button{
 	margin-left:19.3%;
+}
+
+.button{
+	margin-left:5.3%;
+    margin-top: -2%;
 }
 
 #faktatext{
@@ -314,6 +306,6 @@ rad {
 	text-decoration:none;
 }
 
-.button:disabled{
+:disabled{
 	background-color:#000;
 }
